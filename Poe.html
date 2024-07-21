@@ -10,12 +10,24 @@
         body {
             color: #fff;
             font-family: 'Times New Roman', Times, serif;
-            background-image: url("ramas-fondo.jpg");
-            background-size: cover;
+            background-color: #0A1D56;
         }
 
         .navbar-dark .navbar-nav .nav-link {
             color: rgba(255, 255, 255, .75);
+        }
+
+        .navbar-nav .nav-link {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #161A30;
+            color: #fff;
         }
 
         .container {
@@ -24,16 +36,22 @@
         }
 
         .author-section {
-            background-color: #222;
+            background-color: rgba(22, 26, 48, 0.8);
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
-
         }
 
         .author-name {
             font-size: 24px;
             font-weight: bold;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
 
         .book-list {
@@ -70,9 +88,40 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            display: flex;
+            align-items: center;
+            background-color: rgba(32, 32, 32, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .biography img {
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .biography div {
+            max-width: 600px;
+        }
+
+        .biography p {
+            margin: 0;
+        }
+
+        .content {
+            background-image: url("ramas-fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -80,7 +129,7 @@
 <body>
 
     <!-- Menú de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #31304D!important;">
         <a class="navbar-brand" href="index.html">Biblioteca Gótica</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,47 +143,60 @@
                 <li class="nav-item"><a class="nav-link" href="HoraceWalpole.html">Horace Walpole</a></li>
                 <li class="nav-item"><a class="nav-link" href="AnnRadcliffe.html">Ann Radcliffe</a></li>
                 <li class="nav-item"><a class="nav-link" href="RobertLouisStevenson.html">Robert Louis Stevenson</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <div class="container">
-        <div class="author-section">
-            <div class="author-name">Edgar Allan Poe</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="cuervo.jpeg" alt="El Cuervo">
-                    <div>
-                        <strong>El Cuervo</strong><br>
-                        <p>Un poema narrativo sobre un hombre que lamenta la pérdida de su amada Lenore y es visitado
-                            por un cuervo que solo puede decir "Nunca más".</p>
-                    </div>
-                    <a href="https://biblioteca.org.ar/libros/1731.pdf" class="dani link-underline-light btn-sm"
-                        target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="corazon delator.jpg" alt="El Corazón Delator">
-                    <div>
-                        <strong>El Corazón Delator</strong><br>
-                        <p>Un cuento que explora la culpa y la paranoia de un hombre que asesina a un anciano y es
-                            consumido por la idea de que puede escuchar el latido del corazón de su víctima.</p>
-                    </div>
-                    <a href="https://www.ucm.es/data/cont/docs/119-2014-02-19-Poe.ElCorazonDelator.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="casa usher.jpg" alt="La Caída de la Casa Usher">
-                    <div>
-                        <strong>La Caída de la Casa Usher</strong><br>
-                        <p>Una historia de terror sobre la visita de un hombre a la casa de su amigo Roderick Usher, que
-                            está siendo consumido por una enfermedad y la decadencia de su hogar.</p>
-                    </div>
-                    <a href="https://bibliotecas.unileon.es/tULEctura/files/2014/02/La-ca%C3%ADda-de-la-Casa-Usher.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-            </ul>
+        <div class="biography">
+            <img src="poe.jpg" alt="Edgar Allan Poe">
+            <div>
+                <div class="author-name">Edgar Allan Poe</div>
+                <p>Edgar Allan Poe fue un escritor, poeta, crítico y editor estadounidense, conocido por sus cuentos de
+                    terror y misterio. Nació el 19 de enero de 1809 en Boston y falleció el 7 de octubre de 1849 en
+                    Baltimore. Algunas de sus obras más destacadas incluyen "El Cuervo", "El Corazón Delator" y "La
+                    Caída de la Casa Usher".</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="author-section">
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="cuervo.jpeg" alt="El Cuervo">
+                        <div>
+                            <strong>El Cuervo</strong><br>
+                            <p>Un poema narrativo sobre un hombre que lamenta la pérdida de su amada Lenore y es
+                                visitado por un cuervo que solo puede decir "Nunca más".</p>
+                        </div>
+                        <a href="https://biblioteca.org.ar/libros/1731.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aquí!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="corazon delator.jpg" alt="El Corazón Delator">
+                        <div>
+                            <strong>El Corazón Delator</strong><br>
+                            <p>Un cuento que explora la culpa y la paranoia de un hombre que asesina a un anciano y es
+                                consumido por la idea de que puede escuchar el latido del corazón de su víctima.</p>
+                        </div>
+                        <a href="https://www.ucm.es/data/cont/docs/119-2014-02-19-Poe.ElCorazonDelator.pdf"
+                            class="dani link-underline-light btn-sm" target="_blank ">Lee aquí!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="casa usher.jpg" alt="La Caída de la Casa Usher">
+                        <div>
+                            <strong>La Caída de la Casa Usher</strong><br>
+                            <p>Una historia de terror sobre la visita de un hombre a la casa de su amigo Roderick Usher,
+                                que está siendo consumido por una enfermedad y la decadencia de su hogar.</p>
+                        </div>
+                        <a href="https://bibliotecas.unileon.es/tULEctura/files/2014/02/La-ca%C3%ADda-de-la-Casa-Usher.pdf"
+                            class="dani link-underline-light btn-sm" target="_blank ">Lee aquí!</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
