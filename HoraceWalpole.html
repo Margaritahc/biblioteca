@@ -18,10 +18,6 @@
             color: rgba(255, 255, 255, .75);
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255, 255, 255, .75);
-        }
-
         .navbar-nav .nav-link {
             display: block;
             padding: 0.5rem 1.5rem;
@@ -35,16 +31,18 @@
             color: #fff;
         }
 
+
         .container {
             padding: 15px;
             max-width: 800px;
         }
 
         .author-section {
-            background-color: #222;
+            background-color: #161A30;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+
         }
 
         .author-name {
@@ -67,14 +65,13 @@
         }
 
         .book-list img {
-            max-width: 100px;
+            max-width: 170px;
             margin-right: 10px;
         }
 
         .book-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
         }
 
         .book-item img {
@@ -87,9 +84,20 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            overflow: hidden;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -116,51 +124,72 @@
 
     <div class="container">
         <div class="author-section">
-            <div class="author-name">Horace Walpole</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="castillo.jpg" alt="">
-                    <div>
-                        <strong>El castillo de Otranto- Horace Walpole (1764) </strong><br>
-                        <p>Obra precursora del terror gótico, ambientada en la Alta Edad Media, El castillo de Otranto
-                            narra la historia de la maldición que recae sobre
-                            la familia de Manfred, el hombre que ha usurpado la fortaleza que da nombre a este libro.
-                        </p>
-                    </div>
-                    <a href="https://idartesencasa.gov.co/sites/default/files/libros_pdf/113.%20El%20Castillo%20de%20Otranto.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="Hieroglyphic Tales.jpg" alt="">
-                    <div>
-                        <strong>Hieroglyphic Tales (1785)</strong><br>
-                        <p>UEsta colección de cuentos cortos de Walpole también muestra su interés por lo sobrenatural y
-                            lo misterioso. Cada cuento presenta elementos
-                            fantásticos y enigmáticos que capturan la imaginación del lector, manteniendo el tono gótico
-                            que caracteriza su obra.</p>
-                    </div>
-                    <a href="https://books.google.rw/books?id=-JhRDwAAQBAJ&printsec=frontcover#v=onepage&q&f=false"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="misterious.jpg" alt="">
-                    <div>
-                        <strong>The Mysterious Mother (1768) </strong><br>
-                        <p>
-                            Aunque no es estrictamente un cuento corto, esta obra teatral de Walpole es notable por su
-                            tratamiento de temas tabúes y su atmósfera sombría. La historia se centra en el incesto y el
-                            secreto, elementos que son comunes en la literatura gótica de la época.</p>
-                    </div>
-                    <a href="https://lubellamiadotcom.wordpress.com/wp-content/uploads/2016/10/los-misterios-de-udolfo-pdf.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-            </ul>
+            <div class="biography">
+                <img src="poe.jpeg" alt="Edgar Allan Poe" class="author-image">
+                <div class="author-name">Horace Walpole</div>
+                <p>fue un escritor, historiador y político británico, conocido por su novela gótica "El castillo de
+                    Otranto" (1764), considerada la primera del género, y por su residencia en Strawberry Hill, un
+                    ejemplo destacado del estilo gótico revival. Hijo de Sir Robert Walpole, el primer ministro de Gran
+                    Bretaña, fue educado en Eton y el King's College de Cambridge. Además de su contribución literaria,
+                    Walpole dejó una extensa colección de cartas que ofrecen una valiosa visión de la vida social y
+                    política de su tiempo. Su legado perdura tanto en la literatura como en la arquitectura, influyendo
+                    significativamente en el desarrollo de la novela gótica y el renacimiento del estilo gótico en
+                    Inglaterra.</p>
+            </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="author-section">
+                <div class="author-name">Novelas</div>
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="castillo.jpg" alt="">
+                        <div>
+                            <strong>El castillo de Otranto- Horace Walpole (1764) </strong><br>
+                            <p>Obra precursora del terror gótico, ambientada en la Alta Edad Media, El castillo de
+                                Otranto
+                                narra la historia de la maldición que recae sobre
+                                la familia de Manfred, el hombre que ha usurpado la fortaleza que da nombre a este
+                                libro.
+                            </p>
+                        </div>
+                        <a href="https://idartesencasa.gov.co/sites/default/files/libros_pdf/113.%20El%20Castillo%20de%20Otranto.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="Hieroglyphic Tales.jpg" alt="">
+                        <div>
+                            <strong>Hieroglyphic Tales (1785)</strong><br>
+                            <p>UEsta colección de cuentos cortos de Walpole también muestra su interés por lo
+                                sobrenatural y
+                                lo misterioso. Cada cuento presenta elementos
+                                fantásticos y enigmáticos que capturan la imaginación del lector, manteniendo el tono
+                                gótico
+                                que caracteriza su obra.</p>
+                        </div>
+                        <a href="https://books.google.rw/books?id=-JhRDwAAQBAJ&printsec=frontcover#v=onepage&q&f=false"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="misterious.jpg" alt="">
+                        <div>
+                            <strong>The Mysterious Mother (1768) </strong><br>
+                            <p>
+                                Aunque no es estrictamente un cuento corto, esta obra teatral de Walpole es notable por
+                                su
+                                tratamiento de temas tabúes y su atmósfera sombría. La historia se centra en el incesto
+                                y el
+                                secreto, elementos que son comunes en la literatura gótica de la época.</p>
+                        </div>
+                        <a href="https://lubellamiadotcom.wordpress.com/wp-content/uploads/2016/10/los-misterios-de-udolfo-pdf.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

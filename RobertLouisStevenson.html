@@ -18,10 +18,6 @@
             color: rgba(255, 255, 255, .75);
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255, 255, 255, .75);
-        }
-
         .navbar-nav .nav-link {
             display: block;
             padding: 0.5rem 1.5rem;
@@ -35,16 +31,18 @@
             color: #fff;
         }
 
+
         .container {
             padding: 15px;
             max-width: 800px;
         }
 
         .author-section {
-            background-color: #222;
+            background-color: #161A30;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+
         }
 
         .author-name {
@@ -67,14 +65,13 @@
         }
 
         .book-list img {
-            max-width: 100px;
+            max-width: 170px;
             margin-right: 10px;
         }
 
         .book-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
         }
 
         .book-item img {
@@ -87,9 +84,20 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            overflow: hidden;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -116,54 +124,70 @@
 
     <div class="container">
         <div class="author-section">
-            <div class="author-name">Robert Louis Stevenson</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="islatesoro.jpg" alt="">
-                    <div>
-                        <strong>La isla del tesoro (Treasure Island)</strong><br>
-                        <p> Publicada en 1883, es una novela de piratas que ha inspirado innumerables adaptaciones y
-                            sigue siendo <br>
-                            una de las historias de aventuras más populares de todos los tiempos. Narra las peripecias
-                            del joven <br>
-                            Jim Hawkins en busca de un tesoro pirata en una isla remota.</p>
-                    </div>
-                    <a href="https://biblioteca.org.ar/libros/130864.pdf" class="dani link-underline-light btn-sm"
-                        target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="elextraño.jpg" alt="">
-                    <div>
-                        <strong>El extraño caso del Dr. Jekyll y Mr. Hyde (Strange Case of Dr Jekyll and Mr
-                            Hyde)</strong>
-                        <p>Escrita en 1886, es una obra que explora la dualidad humana a través del personaje del Dr.
-                            Jekyll, quien
-                            desarrolla una poción que desencadena su alter ego malévolo, Mr. Hyde. La novela es un
-                            clásico del horror
-                            y la literatura gótica.</p>
-                    </div>
-                    <a href="https://www.secst.cl/upfiles/documentos/07042016_1116am_570695e0a7eec.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="secuestrado.jpg" alt="">
-                    <div>
-                        <strong>Secuestrado (Kidnapped)</strong><br>
-                        <p>Publicada en 1886, es una novela histórica que sigue las aventuras de David Balfour, <br>
-                            un joven escocés durante el conflicto jacobita del siglo XVIII. La historia se centra <br>
-                            en su viaje a través de las Tierras Altas de Escocia y su lucha por la justicia y la
-                            libertad.</p>
-                    </div>
-                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/secuestrado.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-            </ul>
+            <div class="biography">
+                <img src="poe.jpeg" alt="Edgar Allan Poe" class="author-image">
+                <div class="author-name">Robert Louis Stevenson</div>
+                <p>Fnació el 13 de noviembre de 1850 en Edimburgo, Escocia.
+                    Escritor escocés, autor de novelas, crónicas de viaje y ensayos. Fue uno de los primeros en utilizar
+                    el género de la ficción policial. Se lo conoce principalmente por ser el autor de algunas de las
+                    historias fantásticas y de aventuras más clásicas de la literatura como La isla del tesoro.</p>
+            </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="container">
+            <div class="author-section">
+                <div class="author-name">Robert Louis Stevenson</div>
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="islatesoro.jpg" alt="">
+                        <div>
+                            <strong>La isla del tesoro (Treasure Island)</strong><br>
+                            <p> Publicada en 1883, es una novela de piratas que ha inspirado innumerables adaptaciones y
+                                sigue siendo <br>
+                                una de las historias de aventuras más populares de todos los tiempos. Narra las
+                                peripecias
+                                del joven <br>
+                                Jim Hawkins en busca de un tesoro pirata en una isla remota.</p>
+                        </div>
+                        <a href="https://biblioteca.org.ar/libros/130864.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="elextraño.jpg" alt="">
+                        <div>
+                            <strong>El extraño caso del Dr. Jekyll y Mr. Hyde (Strange Case of Dr Jekyll and Mr
+                                Hyde)</strong>
+                            <p>Escrita en 1886, es una obra que explora la dualidad humana a través del personaje del
+                                Dr.
+                                Jekyll, quien
+                                desarrolla una poción que desencadena su alter ego malévolo, Mr. Hyde. La novela es un
+                                clásico del horror
+                                y la literatura gótica.</p>
+                        </div>
+                        <a href="https://www.secst.cl/upfiles/documentos/07042016_1116am_570695e0a7eec.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="secuestrado.jpg" alt="">
+                        <div>
+                            <strong>Secuestrado (Kidnapped)</strong><br>
+                            <p>Publicada en 1886, es una novela histórica que sigue las aventuras de David Balfour, <br>
+                                un joven escocés durante el conflicto jacobita del siglo XVIII. La historia se centra
+                                <br>
+                                en su viaje a través de las Tierras Altas de Escocia y su lucha por la justicia y la
+                                libertad.
+                            </p>
+                        </div>
+                        <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/secuestrado.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

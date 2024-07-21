@@ -18,10 +18,6 @@
             color: rgba(255, 255, 255, .75);
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255, 255, 255, .75);
-        }
-
         .navbar-nav .nav-link {
             display: block;
             padding: 0.5rem 1.5rem;
@@ -35,16 +31,18 @@
             color: #fff;
         }
 
+
         .container {
             padding: 15px;
             max-width: 800px;
         }
 
         .author-section {
-            background-color: #222;
+            background-color: #161A30;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+
         }
 
         .author-name {
@@ -67,14 +65,13 @@
         }
 
         .book-list img {
-            max-width: 100px;
+            max-width: 170px;
             margin-right: 10px;
         }
 
         .book-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
         }
 
         .book-item img {
@@ -87,9 +84,20 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            overflow: hidden;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -116,53 +124,68 @@
 
     <div class="container">
         <div class="author-section">
-            <div class="author-name">Mary Shelley</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="frankenstein.jpeg" alt="">
-                    <div>
-                        <strong>Frankenstein (Frankenstein, o el Moderno Prometeo) (1818)</strong><br>
-                        <p>La novela de Frankenstein no es solo la historia de Halloween por excelencia, sino que se
-                            inscribe dentro el subgénero Romántico de la novela gótica,
-                            también llamado el “Romanticismo oscuro” debido a sus temáticas centradas en lo terrorífico,
-                            sórdido, grotesco, misterioso, perturbador y sobrenatural.</p>
-                    </div>
-                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/TripaElultimohombre.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="ultimohombre.jpg" alt="">
-                    <div>
-                        <strong>El ultimo hombre (1826)</strong><br>
-                        <p>El fenómeno literario y cultural en el que ha resultado la novela de Frankenstein ha hecho
-                            que el resto de obras de Mary Shelley
-                            queden escondidas bajo la sombra gigantesca del monstruo, pero no por esto son menos dignas
-                            de ser conocidas y estudiadas. Una de las más destacadas
-                            es El último hombre, publicada en 1826.</p>
-                    </div>
-                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/TripaElultimohombre.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="mathilda.jpg" alt="">
-                    <div>
-                        <strong>Mathilda (1819-1820)</strong><br>
-                        <p>Mathilda narra su vida en primera persona para justificar sus acciones y su infelicidad antes
-                            de morirse. Y es que la vida de la protagonista
-                            no es precisamente para tirar cohetesMathilda narra su vida en primera persona para
-                            justificar sus acciones y su infelicidad antes de morirse.
-                            Y es que la vida de la protagonista no es precisamente para tirar cohetes.</p>
-                    </div>
-                    <a href="https://www.elejandria.com/libro/mathilda/mary-shelley/718"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-            </ul>
+            <div class="biography">
+                <img src="poe.jpeg" alt="Edgar Allan Poe" class="author-image">
+                <div class="author-name">Mary Shelley </div>
+                <p>Fue una escritora inglesa, célebre por su novela "Frankenstein o el moderno Prometeo" (1818). Nacida
+                    Mary Wollstonecraft Godwin, fue hija del filósofo William Godwin y de la pionera feminista Mary
+                    Wollstonecraft. A los 16 años, se fugó con el poeta Percy Bysshe Shelley, con quien se casó después
+                    de la muerte de la primera esposa de él</p>
+            </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="author-section">
+                <div class="author-name">Novelas</div>
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="frankenstein.jpeg" alt="">
+                        <div>
+                            <strong>Frankenstein (Frankenstein, o el Moderno Prometeo) (1818)</strong><br>
+                            <p>La novela de Frankenstein no es solo la historia de Halloween por excelencia, sino que se
+                                inscribe dentro el subgénero Romántico de la novela gótica,
+                                también llamado el “Romanticismo oscuro” debido a sus temáticas centradas en lo
+                                terrorífico,
+                                sórdido, grotesco, misterioso, perturbador y sobrenatural.</p>
+                        </div>
+                        <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/TripaElultimohombre.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="ultimohombre.jpg" alt="">
+                        <div>
+                            <strong>El ultimo hombre (1826)</strong><br>
+                            <p>El fenómeno literario y cultural en el que ha resultado la novela de Frankenstein ha
+                                hecho
+                                que el resto de obras de Mary Shelley
+                                queden escondidas bajo la sombra gigantesca del monstruo, pero no por esto son menos
+                                dignas
+                                de ser conocidas y estudiadas. Una de las más destacadas
+                                es El último hombre, publicada en 1826.</p>
+                        </div>
+                        <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/TripaElultimohombre.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="mathilda.jpg" alt="">
+                        <div>
+                            <strong>Mathilda (1819-1820)</strong><br>
+                            <p>Mathilda narra su vida en primera persona para justificar sus acciones y su infelicidad
+                                antes
+                                de morirse. Y es que la vida de la protagonista
+                                no es precisamente para tirar cohetesMathilda narra su vida en primera persona para
+                                justificar sus acciones y su infelicidad antes de morirse.
+                                Y es que la vida de la protagonista no es precisamente para tirar cohetes.</p>
+                        </div>
+                        <a href="https://www.elejandria.com/libro/mathilda/mary-shelley/718"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

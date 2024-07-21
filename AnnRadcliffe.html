@@ -18,10 +18,6 @@
             color: rgba(255, 255, 255, .75);
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255, 255, 255, .75);
-        }
-
         .navbar-nav .nav-link {
             display: block;
             padding: 0.5rem 1.5rem;
@@ -35,16 +31,18 @@
             color: #fff;
         }
 
+
         .container {
             padding: 15px;
             max-width: 800px;
         }
 
         .author-section {
-            background-color: #222;
+            background-color: #161A30;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+
         }
 
         .author-name {
@@ -67,14 +65,13 @@
         }
 
         .book-list img {
-            max-width: 100px;
+            max-width: 170px;
             margin-right: 10px;
         }
 
         .book-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
         }
 
         .book-item img {
@@ -87,9 +84,20 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            overflow: hidden;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -116,56 +124,76 @@
 
     <div class="container">
         <div class="author-section">
-            <div class="author-name">Ann Radcliffe</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="confesionaroio de los penitentes negros.jpg" alt="El Cuervo">
-                    <div>
-                        <strong>El italiano o el confesionario de los penitentes negros" (1797)</strong><br>
-                        <p>Esta novela gótica sigue la historia de Ellena Rosalba y su amante, Vivaldi, mientras
-                            intentan escapar de las maquinaciones del siniestro monje Schedoni
-                            y de una conspiración que involucra el misterioso "Confesionario de los Penitentes Negros".
-                            El libro explora temas de intriga, horror y romance en un
-                            ambiente cargado de tensión y misterio.</p>
-                    </div>
-                    <a href="https://ww3.lectulandia.com/book/el-italiano-o-el-confesionario-de-los-penitentes-negros/"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="bosques.jpg" alt="">
-                    <div>
-                        <strong> Romance del bosque" (1791)</strong><br>
-                        <p> También conocida como "Los romances del bosque", esta novela sigue a Adeline, una joven que
-                            huye de un destino
-                            cruel y se refugia en un bosque junto a una familia benévola. La historia combina elementos
-                            de aventura, romance y misterio,
-                            y destaca por su ambientación en la naturaleza y su exploración de los miedos humanos y los
-                            peligros ocultos.</p>
-                    </div>
-                    <a href="https://books.google.co.cr/books?id=EBwkDEyTHvYC&printsec=frontcover&source=gbs_vpt_read#v=onepage&q&f=false"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="misterios.jpg" alt="La Caída de la Casa Usher">
-                    <div>
-                        <strong>Los misterios de Udolfo" (1794)</strong><br>
-                        <p>Considerada una de las obras maestras de la literatura gótica, esta novela narra las
-                            aventuras de Emily St.
-                            Aubert, una joven que queda huérfana y es llevada al castillo de Udolfo, donde enfrenta
-                            terrores sobrenaturales,
-                            secretos familiares y la amenaza de su siniestro tío, Montoni. La obra se caracteriza por su
-                            atmósfera sombría y su detallada descripción de los paisajes.</p>
-                    </div>
-                    <a href="https://lubellamiadotcom.wordpress.com/wp-content/uploads/2016/10/los-misterios-de-udolfo-pdf.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Leer aqui!</a>
-                </li>
-            </ul>
+            <div class="biography">
+                <img src="poe.jpeg" alt="Edgar Allan Poe" class="author-image">
+                <div class="author-name">Ann Radcliffe</div>
+                <p>Fue una destacada novelista inglesa del género gótico, conocida por obras como "Los misterios de
+                    Udolfo" (1794) y "El italiano" (1797). Nacida en Londres, se casó con William Radcliffe, un
+                    periodista que la animó a escribir. Sus novelas se caracterizan por el uso del paisaje y la
+                    atmósfera para crear suspense y por insinuar lo sobrenatural en lugar de describirlo explícitamente.
+                    A pesar de su reclusión personal, su influencia en la literatura gótica es significativa, inspirando
+                    a escritores como Sir Walter Scott y Edgar Allan Poe. Murió en Londres en 1823, dejando un legado
+                    perdurable en la literatura gótica.</p>
+            </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="container">
+            <div class="author-section">
+                <div class="author-name">Novelas</div>
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="confesionaroio de los penitentes negros.jpg" alt="El Cuervo">
+                        <div>
+                            <strong>El italiano o el confesionario de los penitentes negros" (1797)</strong><br>
+                            <p>Esta novela gótica sigue la historia de Ellena Rosalba y su amante, Vivaldi, mientras
+                                intentan escapar de las maquinaciones del siniestro monje Schedoni
+                                y de una conspiración que involucra el misterioso "Confesionario de los Penitentes
+                                Negros".
+                                El libro explora temas de intriga, horror y romance en un
+                                ambiente cargado de tensión y misterio.</p>
+                        </div>
+                        <a href="https://ww3.lectulandia.com/book/el-italiano-o-el-confesionario-de-los-penitentes-negros/"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="bosques.jpg" alt="">
+                        <div>
+                            <strong> Romance del bosque" (1791)</strong><br>
+                            <p> También conocida como "Los romances del bosque", esta novela sigue a Adeline, una joven
+                                que
+                                huye de un destino
+                                cruel y se refugia en un bosque junto a una familia benévola. La historia combina
+                                elementos
+                                de aventura, romance y misterio,
+                                y destaca por su ambientación en la naturaleza y su exploración de los miedos humanos y
+                                los
+                                peligros ocultos.</p>
+                        </div>
+                        <a href="https://books.google.co.cr/books?id=EBwkDEyTHvYC&printsec=frontcover&source=gbs_vpt_read#v=onepage&q&f=false"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="misterios.jpg" alt="La Caída de la Casa Usher">
+                        <div>
+                            <strong>Los misterios de Udolfo" (1794)</strong><br>
+                            <p>Considerada una de las obras maestras de la literatura gótica, esta novela narra las
+                                aventuras de Emily St.
+                                Aubert, una joven que queda huérfana y es llevada al castillo de Udolfo, donde enfrenta
+                                terrores sobrenaturales,
+                                secretos familiares y la amenaza de su siniestro tío, Montoni. La obra se caracteriza
+                                por su
+                                atmósfera sombría y su detallada descripción de los paisajes.</p>
+                        </div>
+                        <a href="https://lubellamiadotcom.wordpress.com/wp-content/uploads/2016/10/los-misterios-de-udolfo-pdf.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Leer aqui!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

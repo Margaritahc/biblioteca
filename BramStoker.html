@@ -18,10 +18,6 @@
             color: rgba(255, 255, 255, .75);
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255, 255, 255, .75);
-        }
-
         .navbar-nav .nav-link {
             display: block;
             padding: 0.5rem 1.5rem;
@@ -35,16 +31,18 @@
             color: #fff;
         }
 
+
         .container {
             padding: 15px;
             max-width: 800px;
         }
 
         .author-section {
-            background-color: #222;
+            background-color: #161A30;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+
         }
 
         .author-name {
@@ -67,14 +65,13 @@
         }
 
         .book-list img {
-            max-width: 100px;
+            max-width: 170px;
             margin-right: 10px;
         }
 
         .book-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
         }
 
         .book-item img {
@@ -87,9 +84,20 @@
             width: 50px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700px;
-            background: #433D8B;
+            background: #B6BBC4;
             border-radius: 10px;
             margin: 10px;
+        }
+
+        .biography {
+            overflow: hidden;
+        }
+
+        .author-image {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -116,58 +124,80 @@
 
     <div class="container">
         <div class="author-section">
-            <div class="author-name">Bram Stoker</div>
-            <ul class="book-list">
-                <li class="book-item">
-                    <img src="dracula.jpg" alt="">
-                    <div>
-                        <strong>Drácula (1897)</strong><br>
-                        <p>Es la obra más famosa de Bram Stoker y una de las novelas más conocidas del género de terror
-                            gótico. Narra la historia del Conde Drácula, un vampiro sediento de sangre que se muda de
-                            Transilvania a Londres para propagar el mal. La novela está estructurada como una serie de
-                            cartas, diario y
-                            recortes de periódico que detallan los esfuerzos del Profesor Van Helsing y otros para
-                            destruir a Drácula y salvar
-                            a la sociedad inglesa de su influencia maligna.</p>
-                    </div>
-                    <a href="https://www.bramstoker.org/pdf/novels/05dracula.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="sieteestrellas.jpg" alt="">
-                    <div>
-                        <strong>La joya de las siete estrellas (1903)</strong><br>
-                        <p>Esta novela explora el tema de la resurrección y el ocultismo egipcio. La historia sigue a un
-                            egiptólogo que despierta accidentalmente a una antigua reina egipcia, quien busca venganza y
-                            poder a través de él. La narrativa se centra en los intentos del protagonista y sus aliado
-                            para contener el poder de la reina y evitar que cumpla sus siniestros planes.
-                        </p>
-                    </div>
-                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/la_joya_de_las_siete_estrellas.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-                <li class="book-item">
-                    <img src="ladama.jpg" alt="">
-                    <div>
-                        <strong>La dama del sudario (1909)</strong><br>
-                        <p>Una historia de suspense y misterio que sigue a un joven abogado que se enamora de una mujer
-                            hermosabr
-
-                            pero misteriosa que está bajo la influencia de un malvado conde. La trama se desarrolla en
-                            un castillo <br>
-                            en los Cárpatos, donde el protagonista intenta desentrañar los secretos oscuros que rodean a
-                            la mujer y su relación con el conde</p>
-                    </div>
-                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/la_dama_del_sudario.pdf"
-                        class="dani link-underline-light btn-sm" target="_blank ">Lee aqui!</a>
-                </li>
-            </ul>
+            <div class="biography">
+                <img src="poe.jpeg" alt="Edgar Allan Poe" class="author-image">
+                <div class="author-name">Bram Stoker</div>
+                <p> Novelista irlandés autor de Drácula (1897), obra clásica y de las más influyentes dentro de la
+                    literatura de terror. Hijo de un funcionario público, hasta los siete años de edad sufrió una grave
+                    parálisis que le impedía andar. Los problemas de salud de su niñez no le impidieron distinguirse
+                    como atleta y futbolista en la Universidad de Dublín, donde cursó con excelentes resultados la
+                    carrera de matemáticas y fue presidente de la Sociedad Filosófica</p>
+            </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="container">
+            <div class="author-section">
+                <div class="author-name">Novelas</div>
+                <ul class="book-list">
+                    <li class="book-item">
+                        <img src="dracula.jpg" alt="">
+                        <div>
+                            <strong>Drácula (1897)</strong><br>
+                            <p>Es la obra más famosa de Bram Stoker y una de las novelas más conocidas del género de
+                                terror
+                                gótico. Narra la historia del Conde Drácula, un vampiro sediento de sangre que se muda
+                                de
+                                Transilvania a Londres para propagar el mal. La novela está estructurada como una serie
+                                de
+                                cartas, diario y
+                                recortes de periódico que detallan los esfuerzos del Profesor Van Helsing y otros para
+                                destruir a Drácula y salvar
+                                a la sociedad inglesa de su influencia maligna.</p>
+                        </div>
+                        <a href="https://www.bramstoker.org/pdf/novels/05dracula.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="sieteestrellas.jpg" alt="">
+                        <div>
+                            <strong>La joya de las siete estrellas (1903)</strong><br>
+                            <p>Esta novela explora el tema de la resurrección y el ocultismo egipcio. La historia sigue
+                                a un
+                                egiptólogo que despierta accidentalmente a una antigua reina egipcia, quien busca
+                                venganza y
+                                poder a través de él. La narrativa se centra en los intentos del protagonista y sus
+                                aliado
+                                para contener el poder de la reina y evitar que cumpla sus siniestros planes.
+                            </p>
+                        </div>
+                        <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/la_joya_de_las_siete_estrellas.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aqui!</a>
+                    </li>
+                    <li class="book-item">
+                        <img src="ladama.jpg" alt="">
+                        <div>
+                            <strong>La dama del sudario (1909)</strong><br>
+                            <p>Una historia de suspense y misterio que sigue a un joven abogado que se enamora de una
+                                mujer
+                                hermosabr
+
+                                pero misteriosa que está bajo la influencia de un malvado conde. La trama se desarrolla
+                                en
+                                un castillo <br>
+                                en los Cárpatos, donde el protagonista intenta desentrañar los secretos oscuros que
+                                rodean a
+                                la mujer y su relación con el conde</p>
+                        </div>
+                        <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/la_dama_del_sudario.pdf"
+                            class="dani link-underline-light btn-outline-dark btn-sm" target="_blank ">Lee aqui!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
